@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">	
+	<script src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.js"></script>
+  <script type="text/javascript" src="js/index.js"></script>
+	<link rel="stylesheet" href="css/styles.css">
+	<title>Схема</title>
+</head>
+<body>
+
+	<div class="scheme">
+		<!--Первая кнопка с подсказкой работает -->
+		<div class="transistor">
+			 <button class="button" aria-describedby="tooltip" id="tooltip-button"><span class="close"></span></button>
+		     <div class="tooltip" role="tooltip" id="tooltip-content">
+		        <img src="img/transistor.jpg" alt="leica gs07">
+				<h3>Транзистор</h3>
+				<p>Описание транзистора</p>			
+		     <div id="arrow" data-popper-arrow></div>
+		    </div>
+		</div>
+		<!--Вторая кнопка с подсказкой НЕ работает -->
+		<div class="transistor2">
+			 <button class="button" aria-describedby="tooltip" id="tooltip-button"><span class="close"></span></button>
+		     <div class="tooltip" role="tooltip" id="tooltip-content">
+		        <img src="img/transistor.jpg" alt="leica gs07">
+				<h3>Транзистор222</h3>
+				<p>Описание транзистора222</p>			
+		     <div id="arrow" data-popper-arrow></div>
+		    </div>
+		</div>
+		<!--Третья кнопка с подсказкой НЕ работает -->
+		<div class="transistor3">
+			 <button class="button" aria-describedby="tooltip" id="tooltip-button"><span class="close"></span></button>
+		     <div class="tooltip" role="tooltip" id="tooltip-content">
+		        <img src="img/transistor.jpg" alt="leica gs07">
+				<h3>Транзистор333</h3>
+				<p>Описание транзистора333</p>			
+		     <div id="arrow" data-popper-arrow></div>
+		    </div>
+		</div>
+
+   </div>
+    
+
+	
+</body>
+</html>

@@ -1,0 +1,151 @@
+     @font-face {     
+      font-family: 'Roboto';
+      font-style: normal;
+      src: url(http://fonts.gstatic.com/s/roboto/v15/mErvLBYg_cXG3rLvUsKT_fesZW2xOQ-xsNqO47m55DA.woff2);
+      }
+
+      h3 {
+      font-weight: 700;
+      font-size: 20px;
+      text-align:left;
+      color: #000;
+      }
+
+      p {
+      font-weight: 400;
+      text-align: left;
+      color: #000;
+      }
+
+
+     * {
+      box-sizing: border-box;
+     }
+
+     .scheme {
+      min-height: 100%;
+      height: 1000px;      
+      background: url(../img/схема.jpg) no-repeat;
+      
+     }
+	 
+      #tooltip-content {
+        background: #fff;
+        color: white;
+        font-weight: bold;
+        padding: 4px 8px;
+        font-size: 16px;
+        display: none;
+        width:300px;
+        height: auto;
+        border: 1px solid #2d2d2d;
+		z-index: 2;
+
+      }
+      #tooltip-content img {
+        width: 200px;
+        height: auto;
+      }
+
+      #tooltip-content[data-show] {
+        display: block;
+      }
+
+      #arrow,
+      #arrow::before {
+        position: absolute;
+        width: 8px;
+        height: 8px;
+        background: inherit;
+      }
+
+      #arrow {
+        visibility: hidden;
+      }
+
+      #arrow::before {
+        visibility: visible;
+        content: '';
+        transform: rotate(45deg);
+      }
+
+      #tooltip-button[data-popper-placement^='top'] > #arrow {
+        bottom: -4px;
+      }
+
+      #tooltip-button[data-popper-placement^='bottom'] > #arrow {
+        top: -4px;
+      }
+
+      #tooltip-button[data-popper-placement^='left'] > #arrow {
+        right: -4px;
+      }
+
+      #tooltip-button[data-popper-placement^='right'] > #arrow {
+        left: -4px;
+      }
+	/*Кнопка*/
+      #tooltip-button {    
+        width: 20px;
+        height: 20px;
+        background-color: #fff;
+        border: none;
+        color: white;
+        padding: 15px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        border-radius: 50%;
+        position: relative;
+        cursor: pointer;
+        border:1px solid #f87700
+      }
+      #tooltip-button:hover {
+      transition-delay: .1s;
+      background: #f87700;
+      border:1px solid #f87700;
+      transition: background-color .2s;
+      }
+
+      #tooltip-button:hover .close:before {
+      background-color: #fff;
+      }
+
+      #tooltip-button:hover .close:after {
+      background-color: #fff;
+      }
+
+	/*Крестик в кнопке*/
+      .close:before, .close:after {
+      position: absolute;
+      top: 14px;
+      left: 9px;
+      content: '';
+      height: 1px;
+      width: 12px;
+      background-color: #f87700;
+      }
+
+      .close:before {
+      transform: rotate(90deg);
+      }
+
+      .close:after {
+      transform: rotate(-180deg);
+      }
+	/*Расположение кнопок*/
+     #transistor {
+      top: 31px;
+      left: 411px;
+     }
+	 #transistor2 {
+      top: 108px;
+      left: 287px;
+     }
+	 #transistor3 {
+      top: 206px;
+      left: 432px;
+     }
+	 
